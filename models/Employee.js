@@ -1,16 +1,3 @@
-/* `employee`
-
-    * `id`: `INT PRIMARY KEY`
-
-    * `first_name`: `VARCHAR(30)` to hold employee first name
-
-    * `last_name`: `VARCHAR(30)` to hold employee last name
-
-    * `role_id`: `INT` to hold reference to employee role
-
-    * `manager_id`: `INT` to hold reference to another employee that is the manager of the current employee (`null` if the employee has no manager)
-*/
-
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -19,19 +6,26 @@ class Employee extends Model {}
 Department.init(
     {
         id: {
-
+            type: DataTypes.INTEGER,
+            primaryKey: true,
         },
         first_name: {
-            
+            type: DataTypes.STRING(30),
         },
         last_name: {
-
+            type: DataTypes.STRING(30),
         },
         role_id: {
-
+            type: DataTypes.INTEGER,
         },
         manager_id: {
-
+            type: DataTypes.INTEGER,
         },
     },
-)
+    {
+        sequelize,
+        modelName: 'employee'
+    }
+);
+
+module.exports = Employee;

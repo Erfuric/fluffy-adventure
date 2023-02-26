@@ -15,3 +15,4 @@ A content management system (CMS) to manage a company's employee database, using
 npm install inquirer@8.2.4
 npm install mysql2
 npm install console.table
+
