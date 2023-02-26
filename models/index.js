@@ -19,3 +19,5 @@ Employee.hasMany(Employee, {
     as: 'directReports',
     foreignKey: 'manager_id',
 });
+
+module.exports = { Employee, Department, Role };
