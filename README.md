@@ -11,3 +11,7 @@ A content management system (CMS) to manage a company's employee database, using
 [MySQL2 package](https://www.npmjs.com/package/mysql2)
 
 [console.table package](https://www.npmjs.com/package/console.table)
+
+npm install inquirer@8.2.4
+npm install mysql2
+npm install console.table

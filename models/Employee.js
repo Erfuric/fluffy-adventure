@@ -10,3 +10,28 @@
 
     * `manager_id`: `INT` to hold reference to another employee that is the manager of the current employee (`null` if the employee has no manager)
 */
+
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+
+class Employee extends Model {}
+
+Department.init(
+    {
+        id: {
+
+        },
+        first_name: {
+            
+        },
+        last_name: {
+
+        },
+        role_id: {
+
+        },
+        manager_id: {
+
+        },
+    },
+)
